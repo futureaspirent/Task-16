@@ -24,7 +24,7 @@ const inputBox = document.getElementById('input-box');
       if (e.target.tagName === "LI") {
         e.target.classList.toggle("checked");
         if (e.target.classList.contains("checked")) {
-        alert("🎉 Another step towards success!");
+        alert(" Another step towards success!");
         }
         saveData();
       } else if (e.target.tagName === "SPAN") {
@@ -42,5 +42,6 @@ const inputBox = document.getElementById('input-box');
     function showTasks() {
       listItems.innerHTML = localStorage.getItem("todoData") || "";
     }
+
 
     showTasks();
